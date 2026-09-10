@@ -19,13 +19,13 @@ function inyectarHeader() {
                 <h1>Michi Panadería</h1>
             </div>
             <nav class="main-nav">
-                <a href="../index.html">Home</a> |
-                <a href="../paginas/index.html">Productos</a> |
-                <a href="../nosotros/index.html">Nosotros</a> |
-                <a href="../blogs/index.html">Blogs</a> |
-                <a href="../contactos/index.html">Contacto</a>
+                <a href="index.html">Home</a> |
+                <a href="paginas/index.html">Productos</a> |
+                <a href="nosotros/index.html">Nosotros</a> |
+                <a href="blogs/index.html">Blogs</a> |
+                <a href="contactos/index.html">Contacto</a>
             </nav>
-            <a href="../paginas/carrito.html" class="cart-status" style="text-decoration: none; color: inherit;">
+            <a href="paginas/carrito.html" class="cart-status" style="text-decoration: none; color: inherit;">
                 <span class="cart-icon">🛒</span> Cart (${totalItems})
             </a>
         </header>
@@ -50,10 +50,10 @@ function inyectarFooter() {
           <div class="footer-columna">
             <h2>Conócenos!</h2>
             <div class="conocenos">
-              <div><a href="../contactos/index.html">Contactanos</a></div>
-              <div><a href="../locales/index.html">Locales</a></div>
-              <div><a href="../terminos/index.html">Términos y condiciones</a></div>
-              <div><a href="../terminos/index.html">Políticas y privacidad</a></div>
+              <div><a href="contactos/index.html">Contactanos</a></div>
+              <div><a href="locales/index.html">Locales</a></div>
+              <div><a href="terminos/index.html">Términos y condiciones</a></div>
+              <div><a href="terminos/index.html">Políticas y privacidad</a></div>
             </div>
           </div>
 
