@@ -20,7 +20,7 @@ function inyectarHeader() {
             </div>
             <nav class="main-nav">
                 <a href="index.html">Home</a> |
-                <a href="paginas/producto.html">Productos</a> |
+                <a href="paginas/productos.html">Productos</a> |
                 <a href="nosotros/index.html">Nosotros</a> |
                 <a href="blogs/index.html">Blogs</a> |
                 <a href="contactos/index.html">Contacto</a>
