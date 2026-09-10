@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michi Panadería - Panel Administrador</title>
+  <link rel="stylesheet" href="../css/admin.css">
+  <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body class="admin-body">
+
+  <div class="admin-estructura">
+
+    <aside class="admin-menu lateral">
+      <nav class="admin-menu">
+        <div class="menu-grupo">
+          <h3>📌 Panel Home</h3>
+          <a href="#dashboard" class="menu-item activo">Dashboard General</a>
+        </div>
+
+        <div class="menu-grupo">
+          <h3>🍞 Gestión Productos</h3>
+          <a href="#mostrar-productos" class="menu-item">Mostrar Productos</a>
+          <a href="#nuevo-producto" class="menu-item">Nuevo Producto</a>
+        </div>
+
+        <div class="menu-grupo">
+          <h3>👥 Gestión Usuarios</h3>
+          <a href="#mostrar-usuarios" class="menu-item">Mostrar Usuarios</a>
+          <a href="#nuevo-usuario" class="menu-item">Nuevo Usuario</a>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="admin-contenido">
+
+      <section id="dashboard" class="admin-cartas">
+        <h2>Bienvenido al Panel Administrador</h2>
+        <p>Desde aquí puedes gestionar el inventario de la tienda y los usuarios registrados.</p>
+        
+        <div class="dashboard-estadisticas">
+          <div class="caja-estadistica">
+            <h4>Total Productos</h4>
+            <span id="total-productos" class="numero-estadistica">0</span>
+          </div>
+          <div class="caja-estadistica">
+            <h4>Usuarios Registrados</h4>
+            <span id="total-usuarios" class="numero-estadistica">0</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="mostrar-productos" class="admin-cartas">
+        <div class="header-cartas">
+          <h2>Mostrar Productos</h2>
+          <a href="#nuevo-producto" class="btn-action">+ Nuevo Producto</a>
+        </div>
+        
+        <table class="admin-tabla">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Imagen</th>
+              <th>Nombre</th>
+              <th>Precio</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-productos">
+
+          </tbody>
+        </table>
+      </section>
+
+      <section id="nuevo-producto" class="admin-cartas">
+        <h2 id="titulo-form-producto">Nuevo Producto</h2>
+        <form id="form-producto" class="admin-forma">
+          <input type="hidden" id="id-producto">
+          
+          <div class="forma-grupo">
+            <label for="nombre-producto">Nombre del Producto:</label>
+            <input type="text" id="nombre-producto" placeholder="Ej. Michi Pastelito" required>
+          </div>
+          
+          <div class="forma-grupo">
+            <label for="precio-producto">Precio ($):</label>
+            <input type="number" id="precio-producto" placeholder="Ej. 3500" required>
+          </div>
+
+          <div class="forma-grupo">
+            <label for="img-producto">Imagen del Producto:</label>
+            <input type="file" id="img-producto" accept="image/*">
+          </div>
+
+          <div class="acciones-forma">
+            <button type="submit" class="btn-guardar">Guardar Producto</button>
+            <button type="button" id="btn-cancelar-producto" class="btn-eliminar" style="display:none;">Cancelar</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="mostrar-usuarios" class="admin-cartas">
+        <div class="header-cartas">
+          <h2>Mostrar Usuarios</h2>
+          <a href="#nuevo-usuario" class="btn-action">+ Nuevo Usuario</a>
+        </div>
+        
+        <table class="admin-tabla">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Email</th>
+              <th>Rol</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-usuarios">
+          </tbody>
+        </table>
+      </section>
+
+      <section id="nuevo-usuario" class="admin-cartas">
+        <h2 id="titulo-form-usuario">Nuevo Usuario</h2>
+        <form id="form-usuario" class="admin-forma">
+          <input type="hidden" id="id-usuario">
+
+          <div class="forma-grupo">
+            <label for="nombre-usuario">Nombre Completo:</label>
+            <input type="text" id="nombre-usuario" placeholder="Ej. Pedro Michi" required>
+          </div>
+
+          <div class="forma-grupo">
+            <label for="email-usuario">Correo Electrónico:</label>
+            <input type="email" id="email-usuario" placeholder="correo@ejemplo.com" required>
+          </div>
+
+          <div class="forma-grupo">
+            <label for="rol-usuario">Rol de Usuario:</label>
+            <select id="rol-usuario">
+              <option value="Cliente">Cliente</option>
+              <option value="Administrador">Administrador</option>
+            </select>
+          </div>
+
+          <div class="acciones-forma">
+            <button type="submit" class="btn-guardar">Guardar Usuario</button>
+            <button type="button" id="btn-cancelar-usuario" class="btn-eliminar" style="display:none;">Cancelar</button>
+          </div>
+        </form>
+      </section>
+
+    </main>
+  </div>
+  <div id="footer"></div>
+
+  <script src="../js/inyeccion.js" defer></script>
+  <script src="../js/admin.js" defer></script>
+</body>
+</html>

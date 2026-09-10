@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slabo+13px&display=swap');
+
+:root {
+  --salmon-principal: #F4A79D;
+  --celeste-pastel: #AEDFF7;
+  --crema-fondo: #FFF8F3;
+  --gris-humo: #9B9B93;
+  --naranjo-atigrado: #E8956B;
+  --beige-siames: #E8D5B7;
+  --cafe-carey: #6B4E3D;
+  --negro-suave: #3D3838;
+  --verde: #2ECC71;
+  --rojo: #E74C3C;
+  --titulos: "Nunito", sans-serif;
+  --texto: "Slabo 13px", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*px ÷ 16 = rem*/
+/*1vw = 1% del ancho total de la pantalla*/
+body {
+    font-family: var(--texto);
+    color: var(--negro-suave);
+    background-color: var(--crema-fondo);
+    font-size: clamp(0.875rem, 2vw, 1.125rem);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1, h2, h3 {
+  font-family: var(--titulos);
+}
+

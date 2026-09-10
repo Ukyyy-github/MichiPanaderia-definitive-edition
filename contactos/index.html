@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Michi Panadería</title>
+    <link rel="stylesheet" href="../css/admin.css"> 
+    <link rel="stylesheet" href="../css/contactos.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+    <main class="contacto">
+        <div class="body-contacto">
+            <h2 class="titulo-contacto">Contacto</h2>
+            
+            <div class="grid-contacto">
+                <div class="texto-contacto">
+                    <p>Si necesitas contactarnos por un pedido realizado a través de la tienda online, escríbenos vía WhatsApp al <strong>+56 9 4261xxxx</strong> de lunes a domingo, entre 08:00 y 19:30 hrs.</p>
+                    <br>
+                    <p>Para otras consultas llámanos a nuestro Call Center <strong>+56 2 2871 xxxx</strong>.</p>
+                    <br>
+                    <p>Si necesitas contactarnos por cualquier otro tema, te responderemos por correo en días hábiles de 07:30 a 20:00 hrs.</p>
+                </div>   
+
+                <div class="forma-contacto">
+                    <form id="form-contacto">
+                        <div class="forma-grupo">
+                            <label for="nombre">Nombre</label>
+                            <div class="relativa">
+                                <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+                            </div>
+                        </div>
+
+                        <div class="forma-grupo">
+                            <label for="email">Email</label>
+                            <div class="relativa">
+                                <input type="email" id="email" placeholder="Escribe tu email" required>
+                            </div>
+                        </div>
+
+                        <div class="forma-grupo">
+                            <label for="mensaje">Mensaje</label>
+                            <div class="relativa">
+                                <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit">Enviar Mensaje</button>
+                    </form>
+                </div> 
+            </div>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="../js/inyeccion.js" defer></script>
+</body>
+</html>
